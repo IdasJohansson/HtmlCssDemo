@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+<title>Form demo</title>
+<link rel="stylesheet" type="text/css" href="./css/styleform.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="navbar-link" href="index.html">START</a>
+            <a class="navbar-link" href="form.html">FORMS</a>
+            <a class="navbar-link" href="images.html">IMAGES</a>
+            <a class="navbar-link" href="webpagetemplate.html">WEBPAGE TEMPLATE</a>
+        </nav>
+    </header>
+
+<h1>FORMS DEMO</h1>
+    
+<div class="form-container">
+    INPUT, FIELDSET, LEGEND, SUBMIT, RESET
+    <form id="login" action="lägg in länk här" method="post">
+    
+    <fieldset> 
+        <legend>LOGIN EXAMPLE</legend>
+            <div class="input-container">
+                 <input class="input-login" type="text" placeholder="First name" name="firstName"/><br/>
+            </div>
+            <div class="input-container">   
+                <input class="input-login"  type="text" placeholder="Last name" name="lastName"/>
+            </div>
+            <div class="input-container">
+                <input class="input-login"  type="email" placeholder="Email" name="emailAdress"/>
+            </div>
+            <div class="input-container">
+                <input class="input-login" type="password" placeholder="Password" name="passWord"/>
+            </div>
+            
+            <button id="submitbtn" type="submit">SUBMIT</button>
+            <button id="resetbtn" type="reset">RESET</button>
+            
+        </fieldset>
+    </form>
+</div>
+
+<div class="checkbox-container">
+CHECKBOXES
+<form id="favouritecolor">
+    <fieldset>
+        <legend> FAVOURITE COLOR (Serveral options are avalible) </legend>
+            <input type="checkbox" name="checkbox1"/>Orange
+            <input type="checkbox" name="checkbox2"/>Yellow
+            <input type="checkbox" name="checkbox3"/>Blue
+            <input type="checkbox" name="checkbox4"/>Green
+            <input type="checkbox" name="checkbox3"/>Purple
+            <input type="checkbox" name="checkbox4"/>Pink <br>
+            
+            <button id="submitbtn" type="submit">SEND</button>
+    </fieldset>
+</form>
+</div>
+
+<div class="form-container">
+TEXTAREA
+<form id="favouritecolor">
+    <fieldset>
+        <legend>LEAVE A COMMENT</legend>
+            <div class="input-container">
+                <textarea  class="input-login" placeholder="Write your message here..." name="message" rows="5"></textarea> 
+            </div>   
+        <button id="submitbtn" type="submit">SEND MESSAGE</button>
+    </fieldset> 
+</form> 
+</div>
+
+
+
+<div class="radio-container">
+DROPDOWNLIST, RADIOBUTTONS
+<form id="rating">
+    <fieldset>
+        <legend>RATE THIS WEBPAGE (One option only)</legend>
+
+        <label for="options">*</label>
+        <div class="input-container">
+            <select name="options"> 
+                <optgroup label="Options"> 
+                    <option>First</option>
+                    <option>Second</option>
+                    <option>Third</option>
+                </optgroup>
+                <optgroup label="Other"> 
+                    <option>:)</option>
+                    <option>(:</option>
+                </optgroup> 
+            </div> 
+
+        <input type="radio" name="radio"/>0
+        <input type="radio" name="radio"/>1
+        <input type="radio" name="radio"/>2 <!--Måste ha samma name för att funktionen att man bara ska kunna välja ett värde ska fungera-->
+        <input type="radio" name="radio"/>3
+        <input type="radio" name="radio"/>4
+        <input type="radio" name="radio"/>5
+        <input type="radio" name="radio"/>6
+        <input type="radio" name="radio"/>7
+        <input type="radio" name="radio"/>8
+        <input type="radio" name="radio"/>9
+        <input type="radio" name="radio"/>10
+        <div>
+            <button id="submitbtn" type="submit">SEND RATING</button>
+        </div>
+    </fieldset>
+</form>
+</div>
+
+
+<footer> © 2022 Copyright </footer>
+</body>
+
+
+

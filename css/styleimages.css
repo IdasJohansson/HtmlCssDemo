@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+  }
+
+header{
+    height: 200px; 
+    /*background-image: linear-gradient(black, white);*/
+    background-image: url("../img/00.jpg"); 
+    background-repeat: repeat;
+    background-attachment:fixed;
+    background-position: top;
+    background-size:cover;
+    width: 100%;
+    box-shadow: 0 4px 6px 0 black;
+ 
+}
+
+h1{
+    font-size: 2rem;
+    color: black;
+    font-family:Helvetica, Arial, sans-serif;  
+    text-align: center;
+    margin: 10px; 
+}
+
+body{
+    background-color: #F9D342;
+}
+
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    height: 60px; 
+    background-color: black;
+    
+    opacity:0.7; 
+    display: flex;
+    justify-content: right;
+    z-index: 100;
+  }
+
+.navbar-link{
+  color: lightgrey; 
+  
+  padding: 5px; 
+  margin: 10px 5px; 
+
+  display: flex;
+  align-items: center;
+
+  font-family:Helvetica, Arial, sans-serif; 
+}  
+
+.navbar-link:hover{
+    background-color: darkgrey;
+    transition: background-color 0.5s; 
+  }
+
+a{
+    text-decoration:none;
+    color:black; 
+ 
+}
+
+a:unvisited{
+    text-decoration:none;
+
+}
+
+/* Github/LinkedIn links*/
+
+.link-container{
+    margin:30px;
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+   
+}
+
+.link{
+    transform: translateX(-0.75em); 
+    transition: transform 0.5s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    opacity: 0.5;
+}
+
+/*
+.link::before{
+    content:"";
+    display: inline-block;
+    width:0.75em; 
+    height: 0.75em;
+
+    opacity: 0; 
+    transition: opacity 2s;
+}
+*/
+
+i{
+    opacity: 0;
+   
+}
+
+.link:hover::before{
+    opacity:1; 
+    transition: opacity 1s;
+}
+
+.link:hover{
+    transform:none; 
+    opacity: 1;
+    transition: opacity 2s, transform 2s;
+}
+
+.link:hover i{
+    opacity:1; 
+    transition:opacity 1s ;
+}
+
+/* Beach image */
+
+#beach{
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Animations */
+#selfportrait{
+    display: block;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    border-radius: 50%;
+    border: 2px solid black; 
+    box-shadow: 4px 4px 4px black; 
+
+    transform: translateY(-3em); 
+    transition: transform 0.5s;
+    opacity: 1;
+}
+
+#selfportrait:hover::before{
+    opacity:0; 
+    transition: opacity 1s;
+}
+
+#selfportrait:hover{
+    transform:none; 
+    opacity: 0.5;
+    transition: opacity 2s, transform 2s;
+}
+
+#selfportrait2{
+    display: block;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    border-radius: 50%;
+    border: 2px solid black; 
+    box-shadow: 4px 4px 4px black; 
+
+    transform: translateX(-2em); 
+    transition: transform 0.5s;
+    opacity: 1;
+}
+
+#selfportrait2:hover::before{
+    opacity:0; 
+    transition: opacity 1s;
+}
+
+#selfportrait2:hover{
+    transform:none; 
+    opacity: 0.5;
+    transition: opacity 2s, transform 2s;
+}
+
+
+#selfportrait3{
+    display: block;
+    margin-top: 5%;
+    border: 2px solid black; 
+    width: 20%;
+    border-radius: 50%;
+    box-shadow: 4px 4px 4px black; 
+    margin-left: auto;
+    margin-right: auto;
+
+    position:relative; 
+    animation-timing-function: ease;
+    animation: movingAnimationright 10s infinite;
+}
+
+#selfportrait4{
+    display: block;
+    margin-top:5%;
+    border: 2px solid black; 
+    width: 20%;
+    border-radius: 50%;
+    box-shadow: 4px 4px 4px black;
+    margin-left: auto;
+    margin-right: auto; 
+   
+
+    position:relative; 
+    animation-timing-function: ease;
+    animation: movingAnimationleft 10s infinite;
+}
+
+
+@keyframes movingAnimationleft {
+    from {left: -30%;}
+    to {left: 30%;}
+  }
+
+@keyframes movingAnimationright {
+    from {right: -30%;}
+    to {right: 30%;}
+  }
+
+/* Picture gallery */
+
+div.gallery {
+    border: 1px solid #F9D342;
+    
+}
+  
+.gallery:hover {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+  
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px 0px  black;
+}
+  
+.desc {
+    background-color: white;
+    font-family: Helvetica, Arial, sans-serif ;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px 0px  black;
+}
+
+.responsive {
+    margin-top:10px; 
+    margin-bottom: 10px;
+    float: left;
+    width: 24.99999%;
+}
+
+#beach2{
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+}
+
+
+
+
+/* Playcards */
+/* Card-container */
+.card-container{
+    display:flex; 
+    place-content: center; 
+    flex-wrap:wrap; 
+    
+    padding: 5%; 
+}
+
+.card{
+    width:350px;
+    height:450px; 
+    border-radius:15px; 
+    position:relative; 
+    outline: 1px solid rgb(255,255,255,0.8); 
+    outline-offset: -8px;
+    box-shadow: 3px 10px 10px black;
+    overflow: hidden; /* Allt som inte får plats på kortet innanför den ramen klipps bort. */
+    background-color: #333;
+    margin: 10px;
+    aspect-ratio: 2/3;
+}
+
+.card-image{
+    position:absolute; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.card:hover .card-image{
+    transform: scale(1.2);
+    transform: translateY(-15%);
+    /*transform: rotate(720deg);*/
+    transition: transform 1s;
+    filter:blur(3px); 
+}
+
+.card-info{
+    position: absolute;
+    bottom: 0;
+    width:100%; 
+    height: 15%;
+    background-color: rgb(0,0,0,0.5);
+    color: white; 
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 0 0 1px rgb(0,0,0,0.5);
+    opacity: 0;
+    text-align: center;
+    transform: translateY(100%);
+
+}
+
+.card:hover .card-info{
+    opacity: 1;
+    transition: all 1s;
+    transform: translateY(0%);
+}
+
+@media screen and (max-width: 768px){
+    .card{
+        width:200px; 
+        height: auto; 
+        aspect-ratio: 2/3;
+    }  
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+      }
+}
+
+@media screen and (max-width: 320px){
+    .card{
+        width: 120px;; 
+        height: auto; 
+        aspect-ratio: 2/3;
+    }  
+    .responsive {
+        width: 100%;
+      }
+}
+
+footer{
+    text-align: center;
+    padding: 10px; 
+    font-family:Helvetica, Arial, sans-serif;
+}
